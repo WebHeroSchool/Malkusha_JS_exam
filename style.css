@@ -1,0 +1,149 @@
+* {
+  font-family: Montserrat, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  height: 1020px;
+  background: url(img/Background.png);
+  color: white;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 150px 120px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header__title {
+  font-weight: bold;
+  font-size: 57px;
+}
+
+.header__instruction {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.start_then {
+  display: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__line {
+  margin: 12px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.game__img {
+  position: relative;
+  margin: 0 12px;
+  width: 218px;
+  height: 341px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.game__img_change {
+  transform: rotateY(180deg);
+}
+
+.game__front, .game__back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.game__back {
+  background: url(img/Back.png);
+}
+
+.game__front {
+  transform: rotateY(180deg);
+}
+
+.game__front_true {
+  background: url(img/Bug.png);
+}
+
+.game__front_false {
+  background: url(img/GameOver.png);
+}
+
+.game__img_hover {
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+  transform: rotate(-3.08deg);
+}
+
+.start::before {
+  content: "";
+  position: absolute;
+  width: 218px;
+  height: 341px;
+  left: 926.33px;
+  top: 512px;
+  background: url(img/Back.png);
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
+  transform: rotate(11.9deg)
+}
+
+.start::after {
+  content: "";
+  position: absolute;
+  width: 218px;
+  height: 341px;
+  left: 1100.33px;
+  top: 512px;
+  background: url(img/Back.png);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)), drop-shadow(-2px 0px 1px rgba(0, 0, 0, 0.3));
+  transform: rotate(39.26deg);
+}
+
+.start__level {
+  margin: 0 160px 112px;
+}
+
+.start__level_choose {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+}
+
+.start__level_choose:hover {
+  cursor: pointer;
+}
+
+.start__level_chosen {
+  list-style-image: url(img/Rectangle.png);
+}
+
+.start__btn {
+  margin-left: 100px;
+  width: 352px;
+  height: 95px;
+  background: #D62B2E;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  color: #FFF;
+}

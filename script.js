@@ -43,7 +43,7 @@ btn.addEventListener('click', start => {
       let rotate = choice.closest('.game__img');
       console.log(rotate);
       rotate.classList.toggle('game__img_change');
-      i.addEventListener('click', getNewGame => {
+      cards.addEventListener('click', getNewGame => {
                 let newGame = document.querySelectorAll('div');
                 for (let k of newGame){
                   k.remove();

@@ -6,7 +6,7 @@
 body {
   width: 1440px;
   height: 1020px;
-  background: url(img/Background.png);
+  background: url(./img/Background.png);
   color: white;
   margin: 0 auto;
 }
@@ -64,7 +64,7 @@ body {
   transform: rotateY(180deg);
 }
 
-.game__front, .game__back{
+.game__front, .game__back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -73,7 +73,7 @@ body {
 }
 
 .game__back {
-  background: url(img/Back.png);
+  background: url(./img/Back.png);
 }
 
 .game__front {
@@ -81,11 +81,11 @@ body {
 }
 
 .game__front_true {
-  background: url(img/Bug.png);
+  background: url(./img/Bug.png);
 }
 
 .game__front_false {
-  background: url(img/GameOver.png);
+  background: url(./img/GameOver.png);
 }
 
 .game__img_hover {
@@ -100,7 +100,7 @@ body {
   height: 341px;
   left: 926.33px;
   top: 512px;
-  background: url(img/Back.png);
+  background: url(./img/Back.png);
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
   transform: rotate(11.9deg)
 }
@@ -112,7 +112,7 @@ body {
   height: 341px;
   left: 1100.33px;
   top: 512px;
-  background: url(img/Back.png);
+  background: url(./img/Back.png);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)), drop-shadow(-2px 0px 1px rgba(0, 0, 0, 0.3));
   transform: rotate(39.26deg);
 }
@@ -133,7 +133,7 @@ body {
 }
 
 .start__level_chosen {
-  list-style-image: url(img/Rectangle.png);
+  list-style-image: url(./img/Rectangle.png);
 }
 
 .start__btn {

@@ -24,7 +24,6 @@ btn.addEventListener('click', start => {
   let cards = document.querySelectorAll('.game__img');
   console.log(cards);
   for(let i of cards) {
-    playGame = false;
     i.addEventListener('mouseover', getHover => {
       let hover = getHover.target;
       hover.classList.toggle('game__img_hover');
@@ -43,16 +42,20 @@ btn.addEventListener('click', start => {
       let rotate = choice.closest('.game__img');
       console.log(rotate);
       rotate.classList.toggle('game__img_change');
-      cards.addEventListener('click', getNewGame => {
-                let newGame = document.querySelectorAll('div');
-                for (let k of newGame){
-                  k.remove();
-                }
-                document.body.classList.toggle('game');
-                title.classList.toggle('start_then');
-                field.classList.toggle('start_then');
-              })
+      for (let card of cards) {
+        card.addEventListener('click', getNewGame => {
+                  let newGame = document.querySelectorAll('div');
+                  for (let k of newGame) {
+                    k.remove();
+                  }
+                  document.body.classList.toggle('game');
+                  title.classList.toggle('start_then');
+                  field.classList.toggle('start_then');
+                })
+      }
     });
+
+
   }
 });
 /*

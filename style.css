@@ -6,7 +6,7 @@
 body {
   width: 1440px;
   height: 1020px;
-  background: url(Img/Background.png);
+  background: url(Img/Background.png) no-repeat;
   color: white;
   margin: 0 auto;
 }

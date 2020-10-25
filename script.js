@@ -21,8 +21,6 @@ btn.addEventListener('click', start => {
   (choice.id === 'easy') ? getEasy():
   (choice.id === 'normal') ? getNormal():
   getHard();
-  console.log(front);
-  console.log(frontImg);
   let cards = document.querySelectorAll('.game__img');
   for(let i of cards) {
     i.addEventListener('click', check => {

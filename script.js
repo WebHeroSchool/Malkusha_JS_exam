@@ -1,7 +1,7 @@
 let field = document.getElementById('field');
 let title = document.getElementById('header');
 let difficulty = document.getElementsByClassName('start__choose');
-let choice, cardChoice, line, card, result;
+let choice, line, card;
 for (let e of difficulty) {
   e.addEventListener('click', chooseDifficulty => {
     if (choice) {
@@ -23,6 +23,7 @@ btn.addEventListener('click', start => {
   getHard();
   choice = null;
   let cards = document.querySelectorAll('.game__img');
+  let cardChoice;
   for(let e of cards) {
     e.addEventListener('click', check => {
       cardChoice = check.target;
@@ -81,7 +82,7 @@ let getFrontCard = () => {
 
 let getFrontCardImg = () => {
   let frontImg = document.createElement('img');
-  result = getRandomInt(2);
+  let result = getRandomInt(2);
   (result === 0) ? frontImg.src = 'Img/GameOver.png':
   frontImg.src = 'Img/Bug.png';
   getFrontCard().append(frontImg);

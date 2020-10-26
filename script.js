@@ -15,8 +15,7 @@ for (let e of difficulty) {
 let btn = document.getElementById('button');
 btn.addEventListener('click', start => {
   choice.classList.toggle('start__chosen');
-  title.classList.toggle('start_then');
-  field.classList.toggle('start_then');
+  goAndAgain();
   document.body.classList.toggle('game');
   (choice.id === 'easy') ? getEasy():
   (choice.id === 'normal') ? getNormal():
@@ -36,8 +35,7 @@ btn.addEventListener('click', start => {
                     k.remove();
                   }
                   document.body.classList.toggle('game');
-                  title.classList.toggle('start_then');
-                  field.classList.toggle('start_then');
+                  goAndAgain();
                 })
       }
     });
@@ -141,3 +139,8 @@ let getHard = () => {
 let getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
 };
+
+let goAndAgain = () => {
+  title.classList.toggle('start_then');
+  field.classList.toggle('start_then');
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("./fonts/montserrat-regular-webfont.woff2") format("woff2"),
+    url("./fonts/montserrat-regular-webfont.woff") format("woff"),
+    url("./fonts/Montserrat-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("./fonts/montserrat-bold-webfont.woff2") format("woff2"),
+    url("./fonts/montserrat-bold-webfont.woff") format("woff"),
+    url("./fonts/Montserrat-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}

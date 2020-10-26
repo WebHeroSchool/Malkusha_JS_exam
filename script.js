@@ -94,12 +94,12 @@ let getEasy = () => {
   if (window.innerWidth <= 375) {
     for (let k = 0; k < 3; k++) {
       makeLine();
-      getCards(makeLine);
+      getCards();
   }
   } else {
     makeLine();
     for (let i = 0; i < 3; i++) {
-      getCards(makeLine);
+      getCards();
     }
   }
 };
@@ -109,7 +109,7 @@ let getNormal = () => {
     for (let k = 0; k < 3; k++) {
       makeLine();
       for (let i = 0; i < 2; i++) {
-        getCards(makeLine);
+        getCards();
       }
     }
   } else {
@@ -125,14 +125,14 @@ let getHard = () => {
     for (let k = 0; k < 5; k++) {
       makeLine();
       for (let i = 0; i < 2; i++) {
-        getCards(makeLine);
+        getCards();
       }
     }
   } else {
     for (let k = 0; k < 2; k++) {
       makeLine();
       for (let i = 0; i < 5; i++) {
-        getCards(makeLine);
+        getCards();
       }
     }
   }
